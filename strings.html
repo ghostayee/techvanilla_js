@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <p>String Operations</p>
+    </div>
+    <script>
+      //concat
+      let first_name = "Jane";
+      let second_name = "Doe";
+      let full_name = first_name.concat(" ", second_name);
+      let full_name2 = first_name + " " + second_name;
+      console.log(full_name);
+      console.log(full_name2);
+
+      //template literals
+      console.log(`My full name is ${full_name}`);
+
+      //accessing chars
+      console.log(first_name[0]);
+
+      //length
+      let sentence = "My dog died today";
+      console.log(sentence.length); //17
+
+      //slice
+      let a = "abcdef";
+      console.log(a.slice(0, 2));
+      console.log(a.slice(3));
+      console.log(a.slice(-4)); //cdef
+
+      //uppercase & lowercase
+      let x = "abcdef";
+      console.log(x.toUpperCase());
+      let sent = "JAVASCRIPT IS FUN";
+      console.log(sent.toLowerCase());
+
+      //includes
+      console.log(sent.includes("JAV"));
+
+      //startsWith and endsWith
+      console.log(sent.startsWith("This"));
+      console.log(sent.endsWith("UN"));
+
+      //indexof
+      let value = "hello";
+      console.log(value.indexOf("l"));
+
+      //replace
+      let new_value = value.replace("hello", "hi");
+      console.log(new_value); //hi
+
+      //trim
+      let lang = "   Javascript.   ";
+      console.log(lang.trim());
+
+      // replace
+      console.log(first_name.replace('jane','janet'))
+
+      //endswith startswith
+      let third_name = "david"
+        console.log(third_name.startsWith('D'))
+    </script>
+  </body>
+</html>
