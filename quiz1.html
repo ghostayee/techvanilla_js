@@ -34,7 +34,11 @@
         let initial_value = 25
         let z = initial_value
 
-        z = 
+        z = z + (initial_value / 2) ** 2
+        z = z - (initial_value % 6)
+        z = z / 5
+        z = z - (2 * (z % 4))
+        console.log(z)
 
     </script>
 </body>
