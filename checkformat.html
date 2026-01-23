@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>string format</title>
+  </head>
+  <body>
+    <script>
+      // test length property
+      let sentence = "my dog died today";
+      console.log(sentence.length);
+
+      //slice method
+      let sentence2 = "i am married in the game";
+      console.log(sentence2.slice(5, 12).toUpperCase());
+      console.log(sentence2.charAt(0).toUpperCase() + sentence2.slice(1));
+      console.log(sentence2.slice(-4)); //in slice allows but [] does not allow -indexing
+      console.log(sentence2.substring(5, 12)); // similar to slice but does not allow negative indexing
+      console.log(sentence2.includes("married")); // checks if the word is present or not
+      console.log(sentence2.startsWith("i am")); // checks if the string starts with the given substring
+      console.log(sentence2.endsWith("game")); // checks if the string ends with the given substring
+      console.log(sentence2.indexOf("married"));
+      console.log(sentence2.substr(5, 14)); // start, and length of substring
+      console.log(sentence2.replaceAll("i", "k"));
+      let hole = sentence2.replaceAll("a","o")
+      console.log(hole);
+
+      let sent = sentence2.replace("married", "occupied")
+      console.log(sent);
+      
+      let value = "bloody motherfucker";
+      console.log(value.indexOf("o"))
+
+      let new_sent = "   Javascript is fun   "; // remove white spaces.
+      let a = new_sent.trim();
+      console.log(new_sent.length);
+      console.log(a);
+      console.log(a.repeat(20));
+      //console.log(a.length);
+      console.log(new_sent.lastIndexOf("i")) // last position of the character in a string
+
+    </script>
+  </body>
+</html>
