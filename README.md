@@ -113,6 +113,9 @@ without reloading
 
 **STRING METHODS & OPERATIONS**
 -Methods are inbuilt functions used to manipulate data
+the find out 
+.charAt(5)  returns the character in that index.
+
 
 1.Concatenation - joining or combining strings 
             a) Using "+" operator
