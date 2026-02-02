@@ -425,4 +425,113 @@ while (!validInput) {
 let sum = num_1 + num_2;
 console.log("The sum is:", sum);
 
+/*TASK 15: Using Python or PHP or Java or Ruby or JavaScript
+Write a program that takes input of someone's basic salary and benefits, adds them to find the gross salary then uses  the gross salary to find the NHIF. 
+To find the Kenya NHIF Rate using THIS LINK: */
 
+let basic = Number(prompt("Enter basic salary:"));
+let benefits_add = Number(prompt("Enter benefits:"));
+
+let gross = basic + benefits;
+let n_hif;
+
+// N_HIF contribution by gross salary (Kenya)
+if (gross <= 5999) {
+  n_hif = 150;
+} else if (gross <= 7999) {
+  n_hif = 300;
+} else if (gross <= 11999) {
+  n_hif = 400;
+} else if (gross <= 14999) {
+  n_hif = 500;
+} else if (gross <= 19999) {
+  n_hif = 600;
+} else if (gross <= 24999) {
+  n_hif = 750;
+} else if (gross <= 29999) {
+  n_hif = 850;
+} else if (gross <= 34999) {
+  n_hif = 900;
+} else if (gross <= 39999) {
+  n_hif = 950;
+} else if (gross <= 44999) {
+  n_hif = 1000;
+} else if (gross <= 49999) {
+  n_hif = 1100;
+} else if (gross <= 59999) {
+  n_hif = 1200;
+} else if (gross <= 69999) {
+  n_hif = 1300;
+} else if (gross <= 79999) {
+  n_hif = 1400;
+} else if (gross <= 89999) {
+  n_hif = 1500;
+} else if (gross <= 99999) {
+  n_hif = 1600;
+} else {
+  n_hif = 1700;
+}
+
+console.log("Gross Salary: " + gross);
+console.log("N_HIF Contribution: " + n_hif);
+
+/*TASK 16: Using Python or PHP or Java or Ruby or JavaScript
+Continue with the program above, then use  the gross salary to find the NSSF. 
+To find the Kenya N_SSF Rate  using 6% of the Gross Salary. BUT ONLY A MINIMUM OF 18,000 Gross Salary CAN BE USED IN NSSF. */
+
+
+// Input basic salary and benefits
+let basic_salary = Number(prompt("Enter basic salary:"));
+let benefits_totals = Number(prompt("Enter benefits:"));
+
+// Calculate gross salary
+let gros_salary = basic_salary + benefits_totals;
+
+//N_HIF
+let nh_if;
+
+if (gros_salary <= 5999) {
+    nh_if = 150;
+} else if (gros_salary <= 7999) {
+    nh_if = 300;
+} else if (gros_salary <= 11999) {
+    nh_if = 400;
+} else if (gros_salary <= 14999) {
+    nh_if = 500;
+} else if (gros_salary <= 19999) {
+    nh_if = 600;
+} else if (gros_salary <= 24999) {
+    nh_if = 750;
+} else if (gros_salary <= 29999) {
+    nh_if = 850;
+} else if (gros_salary <= 34999) {
+    nh_if = 900;
+} else if (gros_salary <= 39999) {
+    nh_if = 950;
+} else if (gros_salary <= 44999) {
+    nh_if = 1000;
+} else if (gros_salary <= 49999) {
+    nh_if = 1100;
+} else if (gros_salary <= 59999) {
+    nh_if = 1200;
+} else if (gros_salary <= 69999) {
+    nh_if = 1300;
+} else if (gros_salary <= 79999) {
+    nh_if = 1400;
+} else if (gros_salary <= 89999) {
+    nh_if = 1500;
+} else if (gros_salary <= 99999) {
+    nh_if = 1600;
+} else {
+    nh_if = 1700;
+}
+
+//N_SSF Calculation
+let n_ssf = 0;
+if (gros_salary >= 18000) {
+    n_ssf = gros_salary * 0.06;  // 6%
+}
+
+console.log("Gross Salary: " + gros_salary);
+console.log("N_HIF Contribution: " + nh_if);
+console.log("N_SSF Contribution: " + n_ssf.toFixed(2));
