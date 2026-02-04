@@ -1,0 +1,1 @@
+let basic_salary = prompt
