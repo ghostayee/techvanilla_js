@@ -480,7 +480,7 @@ Continue with the program above, then use  the gross salary to find the NSSF.
 To find the Kenya N_SSF Rate  using 6% of the Gross Salary. BUT ONLY A MINIMUM OF 18,000 Gross Salary CAN BE USED IN NSSF. */
 
 
-// Input basic salary and benefits
+// Input basic salary and benefits  
 let basic_salary = Number(prompt("Enter basic salary:"));
 let benefits_totals = Number(prompt("Enter benefits:"));
 
